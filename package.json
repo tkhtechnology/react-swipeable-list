@@ -1,5 +1,5 @@
 {
-  "name": "@mjcctech/react-swipeable-list",
+  "name": "@tkhtechnology/react-swipeable-list",
   "description": "Swipeable list component for React",
   "version": "1.1.2",
   "author": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjcctech/react-swipeable-list"
+    "url": "https://github.com/tkhtechnology/react-swipeable-list"
   },
   "license": "MIT",
   "keywords": [
