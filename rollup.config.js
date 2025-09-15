@@ -1,14 +1,14 @@
-import path from 'path';
-import babel from 'rollup-plugin-babel';
-import postcss from 'rollup-plugin-postcss';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import autoprefixer from 'autoprefixer';
-import localResolve from 'rollup-plugin-local-resolve';
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import copy from 'rollup-plugin-copy';
+const path = require('path');
+const babel = require('@rollup/plugin-babel');
+const postcss = require('rollup-plugin-postcss');
+const peerDepsExternal = require('rollup-plugin-peer-deps-external');
+const autoprefixer = require('autoprefixer');
+const localResolve = require('rollup-plugin-local-resolve');
+const resolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const copy = require('rollup-plugin-copy');
 
-import pkg from './package.json';
+const pkg = require('./package.json');
 
 const config = {
   input: 'src/index.js',
@@ -49,4 +49,4 @@ const config = {
   ]
 };
 
-export default config;
+module.exports = config;

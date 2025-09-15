@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import './App.css';
 import App from './App';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+root.render(
   <div className="application">
     <div className="smartphone">
       <div className="smartphone__content">
@@ -48,6 +49,5 @@ ReactDOM.render(
         </span>
       </div>
     </footer>
-  </div>,
-  document.getElementById('root')
+  </div>
 );
